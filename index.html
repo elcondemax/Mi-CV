@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <title>Max Gilbert</title>
+      
+    <!--llamar a java-->
+    <script src="java script/eventos.js"></script>
+</head>
+
+<!--Botonera lateral-->
+<div class="botonera">
+    <a href="#personal"><img class="boton" src="img/personal.png" title="Información Personal" id="pers" onmousemove="enAzul1()" onmouseleave="enNegro1()" alt="informacion personal"> </a>
+    <a href="#laboral"><img class="boton" src="img/laboral.png" title="Experiencia Laboral"id="labo" onmousemove="enAzul2()" onmouseleave="enNegro2()" alt="informacion laboral"> </a>
+    <a href="#habilidades"><img class="boton" src="img/habilidades.png" title="Habilidades" id="habi" onmousemove="enAzul3()" onmouseleave="enNegro3()" alt="habilidades"> </a>
+    <a href="#educacion"><img class="boton" src="img/estudios.png" title="Estudios" id="estu" onmousemove="enAzul4()" onmouseleave="enNegro4()" alt="estudios"> </a>
+    <a href="#idioma"><img class="boton" src="img/idioma.png" title="Idioma" id="idi" onmousemove="enAzul5()" onmouseleave="enNegro5()" alt="idioma"> </a>
+    <a href="#top"><img class="boton" src="img/inicio.png" title="Inicio" id="ini" onmousemove="enAzul6()" onmouseleave="enNegro6()" alt="inicio"> </a>
+</div>
+     
+<body>
+
+    <!--Inicio de lo Principal del CV-->
+<div class="degrade">
+    <div class="grilla">
+<div class="intro">
+    <div class="nombre">Max Gilbert</div>
+    <div class="carrera">Curso Virtual en Desarrollado Front-End</div>
+    <div class="descripcion">Me considero una persona pro-activa, metódica, empática, predispuesta, dinámica, comprometida, con excelente relaciones interpersonales,
+         escucha activa, iniciativa y responsable. Me gusta aprender y superarme en los desafios que se me presenten formando parte de un equipo de tabajo en el cual 
+         pueda desarrollarme persoanl y profesionalmente"</div>
+
+         <!--botones comunicacion-->
+    <a href="#"><img src="img/face.png" class="icono" id="fe" title="Facebook" onmousemove="enAzul7()" onmouseleave="enNegro7()" onclick="abrirFace()"></a>
+    <a href="#"><img src="img/mail.png" class="icono" id="ma" title="mail" onmousemove="enAzul8()" onmouseleave="enNegro8()" onclick="enviarEmail()"></a>
+    <a href="#"><img src="img/linkedin.png" class="icono" title="linkedin" id="li" onmousemove="enAzul9()" onmouseleave="enNegro9()" onclick="abrirIn()"></a>
+
+    <!--agregado boton imprimir pagina-->
+<div class="imprimirPagina">
+    <button onclick="imprimirPagina();">Descargar CV</button>
+</div>
+
+</div> <!--agregado foto de Perfil-->
+    <img src="img/94.jpg" height="400px" width="400px" class="perfil">
+</div>
+
+</div> <!--Fin del lo principal del cv-->
+
+<!--Empieza el contenido del CV-->  
+<div class="caja"  id="personal">
+    <div class="titulo">Información Personal</div>
+    <div class="text">    
+        <ul>
+            <li>Edad: 25</li>
+            <li>Residencia: 2073 E Center St</li>
+            <li>Nacimiento: 4/7/1998</li>
+            <li>Nacionalidad: Estadounidense</li>
+            <li>Telefono: (567) 236-7942</li>
+            <li>E-mail: max.gilbert@example.com</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="caja" id="laboral">
+    <div class="titulo">Experiencia Laboral</div>
+    <div class="text">    
+        <ul>
+            <li>2008 - 2010 / The Pirate School / Intructor en hacking Etico </li>
+            <li>2011 - 2012 / Merlin SA / Jefe en Ciberseguridad</li>
+            <li>2013 - 2020 / Digital Robotic / Programador Master Black hat and White hat</li>
+        </ul>
+    </div>
+</div>
+    
+<div class="caja" id="habilidades">
+    <div class="titulo">Habilidades</div>
+    <div class="text">    
+        <ul>
+            <li>PROGRAMADOR EN CIBERSEGURIDAD BLACK HAT AND WHITE HAT</li>
+            <li>RUST</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>JAVA SCRIPT</li>
+            <li>ANDROID</li>
+            <li>MS-DOS</li>
+            <li>FORTRAN</li>
+        </ul>
+    </div>
+</div>
+
+<div class="caja" id="educacion">
+    <div class="titulo">Estudios</div>
+    <div class="text">    
+        <ul>
+            <li>2008 - 2013 / Carrera de Diseño Grafico / Fadu - UBA </li>
+            <li>2013 - 2015 / Curso de Ilustración vectorial / Escuela Da Binci</li>
+            <li>2017 - 2018/ Seminario Intensivo de Marketing / Fadu - UBA</li>
+            <li>2019 - 2021 / Cursos Virtuales de Desarrollo Front-End</li>
+        </ul>
+    </div>
+</div>
+
+<div class="caja" id="idioma">
+    <div class="titulo">Idioma</div>
+    <div class="text">    
+        <ul>
+            <li>Ingles Medio</li>
+        </ul>
+    </div>
+</div>
+
+<div class="vacio"></div>
+</body>
+</html>
